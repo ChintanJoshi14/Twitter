@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+    .demo {
+        @apply  flex flex-col col-span-2 items-center px-4  md:items-start
+    }
+    .iconEffects {
+        @apply h-5 w-5 cursor-pointer transition-transform duration-150 ease-out hover:scale-150 disabled:text-gray-400
+    }
+}
